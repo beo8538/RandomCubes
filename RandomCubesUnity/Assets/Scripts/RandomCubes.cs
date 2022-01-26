@@ -37,8 +37,9 @@ public class RandomCubes : MonoBehaviour
 
         gObj.name = "Cube" + numberOfCubes; //name of cube instance
 
-        Color randColor = new Color(Random.value, Random.value, Random.value);
-        gObj.GetComponent<Renderer>().material.color = randColor;
+        Color randColor = new Color(Random.value, Random.value, Random.value); //creates new random color
+
+        gObj.GetComponent<Renderer>().material.color = randColor; //assigns random color to game object
 
         gObj.transform.position = Random.insideUnitSphere; // random location inside a sphere radius pf 1 out from 0,0,0
 
